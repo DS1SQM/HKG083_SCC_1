@@ -292,7 +292,8 @@ class SccSmoother:
 
   def cal_acc(self, apply_accel, CS, clu11_speed, sm):
 
-    cruise_gap = clip(CS.cruise_gap, 1., 4.)
+    #cruise_gap = clip(CS.cruise_gap, 1., 4.)
+    cruise_gap = 1.
 
     override_acc = 0.
     #v_ego = clu11_speed * CV.KPH_TO_MS
